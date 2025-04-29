@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 
 type Language = 'en' | 'id';
 
@@ -294,6 +294,27 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<Language>('en');
+
+  useEffect(() => {
+    // Get browser language
+    const browserLang = navigator.language.toLowerCase();
+    
+    // Set initial language based on browser preference
+    if (browserLang.startsWith('id')) {
+      setLanguage('id');
+    }
+    
+    // Store language preference
+    const storedLang = localStorage.getItem('preferred-language');
+    if (storedLang === 'en' || storedLang === 'id') {
+      setLanguage(storedLang);
+    }
+  }, []);
+
+  // Update localStorage when language changes
+  useEffect(() => {
+    localStorage.setItem('preferred-language', language);
+  }, [language]);
 
   const t = (key: string): string => {
     return translations[language][key as keyof typeof translations[typeof language]] || key;
