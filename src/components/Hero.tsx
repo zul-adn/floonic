@@ -7,8 +7,8 @@ const Hero: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    "https://images.pexels.com/photos/8439094/pexels-photo-8439094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://blog.n8n.io/content/images/size/w1200/2024/10/ai-workflow-automationA--1-.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://blog.n8n.io/content/images/size/w1200/2023/05/building-api-6.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/8867482/pexels-photo-8867482.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   ];
 
@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
           </div>
           <div className="relative">
             <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-teal-600 rounded-lg blur opacity-20"></div>
-            <div className="relative bg-white p-6 rounded-lg shadow-xl overflow-hidden border border-gray-100">
+            <div className="relative bg-white  rounded-lg shadow-xl overflow-hidden border border-gray-100">
               <div className="relative">
                 <div className="w-full h-[400px] overflow-hidden rounded-md">
                   {slides.map((slide, index) => (
