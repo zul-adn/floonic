@@ -35,9 +35,9 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">{t('footer.features')}</a></li>
               <li><a href="#pricing" className="text-gray-400 hover:text-white transition-colors">{t('footer.pricing')}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.security')}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.integrations')}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.api')}</a></li>
+              {/* <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.security')}</a></li> */}
+              {/* <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.integrations')}</a></li> */}
+              {/* <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.api')}</a></li> */}
             </ul>
           </div>
           
@@ -45,10 +45,10 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">{t('footer.company')}</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.about')}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.blog')}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.careers')}</a></li>
+              {/* <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.blog')}</a></li> */}
+              {/* <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.careers')}</a></li> */}
               <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">{t('footer.contact')}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.partners')}</a></li>
+              {/* <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.partners')}</a></li> */}
             </ul>
           </div>
         </div>
