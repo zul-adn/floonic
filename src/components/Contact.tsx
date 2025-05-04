@@ -20,8 +20,7 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     // In a real implementation, you would send the form data to your backend
-    console.log('Form submitted:', formData);
-    await fetch('https://n8n-test-u38647.vm.elestio.app/webhook/4dafbb5e-4802-4058-bb83-87515238c430', {
+    await fetch('https://workspace.floonic.com/webhook/4dafbb5e-4802-4058-bb83-87515238c430', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
