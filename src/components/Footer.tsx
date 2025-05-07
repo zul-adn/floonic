@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Twitter, Linkedin, Github } from 'lucide-react';
+import { Zap } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const Footer: React.FC = () => {
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 mb-4 max-w-md">
               {t('footer.description')}
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Github className="h-5 w-5" />
               </a>
-            </div>
+            </div> */}
           </div>
           
           <div>

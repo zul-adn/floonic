@@ -53,7 +53,7 @@ const translations = {
 
     // Pricing
     'pricing.title': 'Simple, Transparent Pricing',
-    'pricing.subtitle': "Choose the plan that's right for your business. All plans include a 14-day free trial.",
+    'pricing.subtitle': "Choose the plan that's right for your business. All plans include a 30-day free trial.",
     'pricing.starter.title': 'Starter',
     'pricing.pro.title': 'Premium',
     'pricing.enterprise.title': 'Business',
@@ -96,7 +96,7 @@ const translations = {
     // Contact
     'contact.title': 'Ready to Transform Your Workflow?',
     'contact.subtitle': 'Get in touch with us today and discover how Floonic can streamline your business processes.',
-    'contact.benefits.trial': 'Free 14-day trial',
+    'contact.benefits.trial': 'Free 30-day trial',
     'contact.benefits.trialDesc': 'Try all features risk-free with no credit card required.',
     'contact.benefits.onboarding': 'Personalized onboarding',
     'contact.benefits.onboardingDesc': 'Get help setting up your first automation workflows.',
@@ -191,7 +191,7 @@ const translations = {
 
     // Pricing
     'pricing.title': 'Harga Sederhana dan Transparan',
-    'pricing.subtitle': 'Pilih paket yang tepat untuk bisnis Anda. Semua paket termasuk uji coba gratis 14 hari.',
+    'pricing.subtitle': 'Pilih paket yang tepat untuk bisnis Anda. Semua paket termasuk uji coba gratis 30 hari.',
     'pricing.starter.title': 'Starter', 
     'pricing.pro.title': 'Premium',
     'pricing.enterprise.title': 'Bisnis',
@@ -237,7 +237,7 @@ const translations = {
     // Contact
     'contact.title': 'Siap Mengubah Alur Kerja Anda?',
     'contact.subtitle': 'Hubungi kami hari ini dan temukan bagaimana Floonic dapat mengefisienkan proses bisnis Anda.',
-    'contact.benefits.trial': 'Uji coba gratis 14 hari',
+    'contact.benefits.trial': 'Uji coba gratis 30 hari',
     'contact.benefits.trialDesc': 'Coba semua fitur tanpa risiko, tanpa kartu kredit.',
     'contact.benefits.onboarding': 'Onboarding personal',
     'contact.benefits.onboardingDesc': 'Dapatkan bantuan menyiapkan alur kerja otomatisasi pertama Anda.',

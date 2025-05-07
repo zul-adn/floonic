@@ -20,26 +20,26 @@ const Hero: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
+  // const nextSlide = () => {
+  //   setCurrentSlide((prev) => (prev + 1) % slides.length);
+  // };
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
+  // const prevSlide = () => {
+  //   setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  // };
   
   return (
-    <div className="relative bg-gradient-to-br from-blue-50 to-white pt-24 pb-16 md:pt-32 md:pb-24">
+    <div className="relative bg-gradient-to-br from-blue-50 to-white pt-24 pb-16 md:pt-56 md:pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 leading-tight text-center">
               {t('hero.title')} <span className="text-teal-600">{t('hero.subtitle')}</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-xl">
+            <p className="text-lg md:text-xl text-gray-600 max-w-xl text-center mx-auto">
               {t('hero.subtitle')}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col items-center justify-center sm:flex-row gap-4">
               <a
                 href="#contact"
                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-900 hover:bg-blue-800 transition-colors duration-200 shadow-md"
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
                 {t('hero.seeHow')}
               </a>
             </div>
-            <div className="flex items-center space-x-2 text-sm text-gray-500">
+            <div className="flex items-center justify-center space-x-2 text-sm text-gray-500">
               <div className="flex -space-x-1">
                 <img className="h-6 w-6 rounded-full ring-2 ring-white" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="User" />
                 <img className="h-6 w-6 rounded-full ring-2 ring-white" src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="User" />
@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
               <span>{t('hero.trusted')}</span>
             </div>
           </div>
-          <div className="relative">
+          {/* <div className="relative">
             <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-teal-600 rounded-lg blur opacity-20"></div>
             <div className="relative bg-white  rounded-lg shadow-xl overflow-hidden border border-gray-100">
               <div className="relative">
@@ -105,7 +105,7 @@ const Hero: React.FC = () => {
               </div>
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-white to-transparent opacity-20"></div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
