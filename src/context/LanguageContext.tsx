@@ -203,7 +203,7 @@ const translations = {
     'pricing.starter.desc': 'Sempurna untuk tim kecil yang mencoba memulai dengan otomatisasi.',
     'pricing.starter.feature1': '1 automasi aktif',
     'pricing.starter.feature2': '100 operasi per bulan',
-    'pricing.starter.feature3': '1 integrasi ( pilih satu: wahtasapp, Email, Google Form, dll )',
+    'pricing.starter.feature3': '1 integrasi ( pilih satu: whatsapp, Email, Google Form, dll )',
     'pricing.starter.feature4': 'Dukungan Setup Workflow',
     'pricing.starter.feature5': 'Dukungan Whatsapp/Email',
     // 'pricing.starter.feature4': 'Dukungan email',
