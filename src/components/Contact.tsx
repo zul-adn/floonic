@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CheckCircle } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import ReCAPTCHA from 'react-google-recaptcha'; 
+// import ReCAPTCHA from 'react-google-recaptcha'; 
 
 const Contact: React.FC = () => {
   const { t } = useLanguage();
@@ -12,11 +12,11 @@ const Contact: React.FC = () => {
     company: '',
     message: ''
   });
-  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  // const [captchaToken, setCaptchaToken] = useState<string | null>(null);
 
-  const handleCaptchaChange = (token: string | null) => {
-    setCaptchaToken(token); // Update CAPTCHA token
-  };
+  // const handleCaptchaChange = (token: string | null) => {
+  //   setCaptchaToken(token); // Update CAPTCHA token
+  // };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -26,10 +26,10 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!captchaToken) {
-      alert(t('contact.form.captchaError')); // Show error if CAPTCHA is not completed
-      return;
-    }
+    // if (!captchaToken) {
+    //   alert(t('contact.form.captchaError')); // Show error if CAPTCHA is not completed
+    //   return;
+    // }
 
     await fetch('https://workspace.floonic.com/webhook/4dafbb5e-4802-4058-bb83-87515238c430', {
       method: 'POST',
@@ -148,12 +148,12 @@ const Contact: React.FC = () => {
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-900 focus:border-blue-900"
                     ></textarea>
                   </div>
-                  <div className="mt-4">
+                  {/* <div className="mt-4">
                     <ReCAPTCHA
                       sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY || ''}  // Replace with your reCAPTCHA site key
                       onChange={handleCaptchaChange}
                     />
-                  </div>
+                  </div> */}
                   <button
                     type="submit"
                     className="w-full py-3 px-4 bg-blue-900 text-white font-medium rounded-md hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2"
