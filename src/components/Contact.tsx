@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, MailCheck, PhoneCallIcon } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 // import ReCAPTCHA from 'react-google-recaptcha'; 
 
@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
             <p className="text-lg text-gray-600 mb-8">
               {t('contact.subtitle')}
             </p>
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               <div className="flex items-start">
                 <div className="flex-shrink-0 h-6 w-6 text-teal-600">
                   <CheckCircle className="h-6 w-6" />
@@ -80,6 +80,25 @@ const Contact: React.FC = () => {
                   <p className="mt-1 text-gray-600">{t('contact.benefits.cancelDesc')}</p>
                 </div>
               </div>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+              Find Us
+            </h2>
+            <div className="flex items-start mb-2">
+                <div className="flex-shrink-0 h-6 w-6 text-teal-600">
+                  <PhoneCallIcon className="h-6 w-6" />
+                </div>
+                <div className="ml-3">
+                  <h3 className="text-lg font-medium text-gray-900">+62 817 357 799</h3>
+                </div>
+            </div>
+            <div className="flex items-start">
+                <div className="flex-shrink-0 h-6 w-6 text-teal-600">
+                  <MailCheck className="h-6 w-6" />
+                </div>
+                <div className="ml-3">
+                  <h3 className="text-lg font-medium text-gray-900">info@floonic.com</h3>
+                </div>
             </div>
           </div>
           <div>
